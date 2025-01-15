@@ -1,9 +1,9 @@
-# ai-project-refactoring
+# ai-refactoring-suggestions
 Testing AI refactoring suggestions on realworld project
 
 Project used for analysis: [screenshot-to-code](https://github.com/abi/screenshot-to-code)
 
-Project_summary.md (332398 tokens), is generated using[code2prompt](https://github.com/raphaelmansuy/code2prompt)
+Project_summary.md (332398 tokens), is generated using [code2prompt](https://github.com/raphaelmansuy/code2prompt)
 
 
 Prompt Used: 
