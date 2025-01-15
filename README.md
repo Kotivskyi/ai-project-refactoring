@@ -3,14 +3,23 @@ Testing AI refactoring suggestions on realworld project
 
 Project used for analysis: [screenshot-to-code](https://github.com/abi/screenshot-to-code)
 
+
+**Models Tested:**
+- O1
+- Gemini-2.0-flash-thinking-exp
+- Claude-sonnet-3.5-sonnet-20240620
+- ChatGPT-4o
+- DeepThink
+
+**Input:**
 Project_summary.md (332398 tokens), is generated using [code2prompt](https://github.com/raphaelmansuy/code2prompt)
 
 
-Prompt Used: 
+**Prompt:** 
 "Here's our current code base  @project_summary.md. Can you propose improvements or a refactoring plan? Give me bullet list of such improvments with priorities (High/Medium/Low) and short explanation why this improvment needed and what has to be done for each item"
 
 
-## Suggested Improvments Comparison
+## Suggested Improvments Comparison (O1 vs Gemini)
 
 | Improvment                                        | O1 (Priority) | Gemini-2.0-flash-thinking-exp (Priority) | Subjective Ranking |
 | ------------------------------------------------- | ------------- | ---------------------------------------- | ------------- |
