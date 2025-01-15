@@ -11,8 +11,8 @@ Project used for analysis: [screenshot-to-code](https://github.com/abi/screensho
 - ChatGPT-4o
 - DeepThink
 
-**Input:**
-Project_summary.md (332398 tokens), is generated using [code2prompt](https://github.com/raphaelmansuy/code2prompt)
+**Context:**
+Project_summary.md (332398 tokens). Generated using [code2prompt](https://github.com/raphaelmansuy/code2prompt)
 
 
 **Prompt:** 
