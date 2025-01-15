@@ -1,14 +1,13 @@
 # ai-project-refactoring
 Testing AI refactoring suggestions on realworld project
 
-Code2Prompt: https://github.com/raphaelmansuy/code2prompt
+Project used for analysis: [screenshot-to-code](https://github.com/abi/screenshot-to-code)
 
-Repo Used for analysis: https://github.com/abi/screenshot-to-code
+Project_summary.md (332398 tokens), is generated using[code2prompt](https://github.com/raphaelmansuy/code2prompt)
 
-Project_summary.md Tokens: 332398
 
-Prompt: 
-" Here's our current code base  @project_summary.md  . Can you propose improvements or a refactoring plan? Give me bullet list of such improvments with priorities (High/Medium/Low) and short explanation why this improvment needed and what has to be done for each item"
+Prompt Used: 
+"Here's our current code base  @project_summary.md. Can you propose improvements or a refactoring plan? Give me bullet list of such improvments with priorities (High/Medium/Low) and short explanation why this improvment needed and what has to be done for each item"
 
 
 ## Suggested Improvments Comparison
