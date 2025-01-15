@@ -8,16 +8,22 @@ Repo Used for analysis: https://github.com/abi/screenshot-to-code
 Project_summary.md Tokens: 332398
 
 Prompt: 
-"Here’s our current code base. Can you propose improvements or a refactoring plan?"
-
-## Ranking of Responses
-
-| Model                         | Score | Subjective Feedback                                                                                                | AI Feedback |
-| ----------------------------- | ----- | ----------------------------------------------------------------------------------------------------------------- | ----------- |
-| Gemini-2.0-flash-thinking-exp | Best  | Meaningful refactoring suggestions. It feels like it has a good understanding of the codebase. I would definitely consider implementing some of them.| Offers strong architectural vision with clear separation of concerns between frontend and backend, focusing on system design patterns and scalability considerations. |
-| O1                            | 2nd   | I kinda like Gemini response more.  Some suggestions are meaningful but others are not. Anyweay it better higlights Documentation problem and found missing CI/CD.                                                            | Excels in providing a comprehensive DevOps-oriented roadmap with clear, actionable steps for implementation, making it ideal for teams looking to improve both code quality and deployment processes. |
-| GPT-4o                        | 3rd   | Kinda makes sense, but feels like a list of general suggestions                                                    | Provides accessible high-level overview of improvement areas but lacks specific implementation details, making it better suited for initial planning rather than execution. |
-| Claude-sonnet-3.5             | 4th   | Tries to write code straight away, but what I really want is bigger picture overview                                                      | Delivers practical, code-first approach with concrete TypeScript examples and type safety improvements, though narrower in scope compared to infrastructure considerations. |
+" Here's our current code base  @project_summary.md  . Can you propose improvements or a refactoring plan? Give me bullet list of such improvments with priorities (High/Medium/Low) and short explanation why this improvment needed and what has to be done for each item"
 
 
+## Suggested Improvments Comparison
 
+| Improvment                                        | O1 (Priority) | Gemini-2.0-flash-thinking-exp (Priority) | Subjective Human Ranking |
+| ------------------------------------------------- | ------------- | ---------------------------------------- | ------------- |
+| Centralize Configuration Files                    | ❌            | ✅ (High)                                | (Medium) Make sence, Configs will be easier to support in the future         |
+| Improve Component Organization in Frontend        | ✅ (High)     | ✅ (High)                                | (High) Definetly worth doing high risk of having spaghettic code              |
+| Standardize Naming Conventions / Linter Rules                    | ✅ (Medium)             | ✅ (Medium)                              | (High) Good linter should be able to solve it              |
+| Group Backend Routes                              | ❌            | ✅ (Medium)                              | (Medium-Low) Only If we are planning to add more routes             |
+| Review Utility and Helper Functions               | ✅ (Medium)   | ✅ (Low)                                 | (Medium) Worth to check if there are any duplicates. Why the are 2 places for utility functions ?           |
+| Consolidate Test Directories                      | ✅ (Low)      | ✅ (Low)                                 | (Medium) Definitely YES              |
+| Add Consistent Error Handling                     | ✅ (High)     | ❌                                       | (Medium) Good Point especially if we are aiming for good code quality and not just a demo            |
+| Improve TypeScript Strictness                     | ✅ (High)     | ❌                                       | (Low) Up to taste of developers. Typescript strictnes is kinda painfull already            |
+| Extract Reusable Layout Components                | ✅ (Medium)   | ❌                                       | (Low) sounds good, but need to take a look what can be reused               |
+| Improve Comments and Documentation                | ✅ (Low)      | ❌                                       | (Medium) It is always trade of between development speed and documentation, if there was way to employ AI to do it              |
+| Optimize for Performance Where Relevant           | ✅ (Low)      | ❌                                       | (Low) Only spend time on it if there is clear bottleneck              |
+| Enhance Testing Coverage                          | ✅ (Low)      | ❌                                       | (Medium) Maybe let AI do it. Never seen developer willing to add tests when feature is already working.              | 
