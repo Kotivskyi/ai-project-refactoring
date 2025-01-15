@@ -12,7 +12,7 @@ Prompt Used:
 
 ## Suggested Improvments Comparison
 
-| Improvment                                        | O1 (Priority) | Gemini-2.0-flash-thinking-exp (Priority) | Subjective Human Ranking |
+| Improvment                                        | O1 (Priority) | Gemini-2.0-flash-thinking-exp (Priority) | Subjective Ranking |
 | ------------------------------------------------- | ------------- | ---------------------------------------- | ------------- |
 | Centralize Configuration Files                    | ❌            | ✅ (High)                                | (Medium) Make sence, Configs will be easier to support in the future         |
 | Improve Component Organization in Frontend        | ✅ (High)     | ✅ (High)                                | (High) Definetly worth doing high risk of having spaghettic code              |
