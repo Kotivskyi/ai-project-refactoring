@@ -1,8 +1,9 @@
 # ai-refactoring-suggestions
 Testing AI refactoring suggestions on real-world project
 
-Project used for analysis: [screenshot-to-code](https://github.com/abi/screenshot-to-code)
+Project used for analysis: https://github.com/abi/screenshot-to-code
 
+Token counter:  https://github.com/felvin-search/token-count
 
 **Models Tested:**
 - O1
@@ -12,7 +13,7 @@ Project used for analysis: [screenshot-to-code](https://github.com/abi/screensho
 - DeepThink
 
 **Context:**
-Project_summary.md (332398 tokens). Generated using [code2prompt](https://github.com/raphaelmansuy/code2prompt)
+Project_summary.md (332387 tokens). Generated using [code2prompt](https://github.com/raphaelmansuy/code2prompt)
 
 
 **Prompt:** 
